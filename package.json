@@ -1,13 +1,39 @@
 {
   "name": "visiondream",
-  "version": "0.0.0",
+  "version": "2.2.1",
+  "description": "VisionDream Official Website Project",
+  "author": "Onkgopotse Lenake <gupilenake@gmail.com> (https://visiondreamict.wordpress.com)",
+  "contributors": [
+    {
+      "name": "Onkgopotse Lenake",
+      "email": "gupilenake@gmail.com",
+      "url": "https://visiondreamict.wordpress.com"
+    },
+    {
+      "name": "VisionDream Team",
+      "email": "visiondreamict@gmail.com",
+      "url": "https://visiondreamict.wordpress.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kgupi/visiondream.git"
+  },
+  "keywords": [
+    "visiondream",
+    "visiondream ict solutions",
+    "visiondream official home page"
+  ],
+  "homepage": "https://visiondreamict.wordpress.com",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --open",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "start-visiondream": "webpack-dev-server --mode development --config visiondream-webpack.dev.config.js --open",
+    "build-prod-visiondream": "webpack --mode production --config visiondream-webpack.prod.config.js"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +45,7 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
+    "core-js": "^3.4.7",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
@@ -28,10 +55,14 @@
     "@angular/cli": "~8.3.20",
     "@angular/compiler-cli": "~8.2.14",
     "@angular/language-service": "~8.2.14",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
+    "angular2-template-loader": "^0.6.2",
     "codelyzer": "^5.0.0",
+    "css-loader": "^2.1.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
@@ -39,9 +70,17 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
     "protractor": "~5.4.0",
+    "raw-loader": "^4.0.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.2.1",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.5.3"
+    "typescript": "~3.5.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   }
 }
