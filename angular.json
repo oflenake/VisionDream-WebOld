@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.less"
             ],
             "scripts": []
@@ -67,11 +68,13 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "visiondream:build"
+            "browserTarget": "visiondream:build",
+            "port": 44303
           },
           "configurations": {
             "production": {
-              "browserTarget": "visiondream:build:production"
+              "browserTarget": "visiondream:build:production",
+              "port": 44304
             }
           }
         },
@@ -93,6 +96,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.less"
             ],
             "scripts": []
@@ -124,6 +128,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "visiondream"
 }
