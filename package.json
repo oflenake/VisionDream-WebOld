@@ -1,30 +1,19 @@
 {
   "name": "visiondream",
   "version": "2.2.1",
-  "description": "VisionDream Official Website Project",
+  "description": "VisionDream Website Project",
   "author": "Onkgopotse Lenake <gupilenake@gmail.com> (https://visiondreamict.wordpress.com)",
-  "contributors": [
-    {
-      "name": "Onkgopotse Lenake",
-      "email": "gupilenake@gmail.com",
-      "url": "https://visiondreamict.wordpress.com"
-    },
-    {
-      "name": "VisionDream Team",
-      "email": "visiondreamict@gmail.com",
-      "url": "https://visiondreamict.wordpress.com"
-    }
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kgupi/visiondream.git"
-  },
+  "contributors": [ "VisionDream Team <visiondreamict@gmail.com> (https://visiondreamict.wordpress.com)" ],
   "keywords": [
     "visiondream",
-    "visiondream ict solutions",
-    "visiondream official home page"
+    "visiondream website",
+    "visiondream ict solutions"
   ],
   "homepage": "https://visiondreamict.wordpress.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/visiondream/visiondream.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve visiondream --open",
@@ -60,6 +49,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
     "@fortawesome/free-regular-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "angular-cli-ghpages": "^0.6.0",
     "core-js": "^3.4.7",
     "hammerjs": "^2.0.8",
     "ngx-logger": "^4.0.7",

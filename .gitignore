@@ -46,3 +46,4 @@ testem.log
 Thumbs.db
 /.vs/slnx.sqlite
 /.vs/visiondream/config/applicationhost.config
+/.vs/slnx.sqlite-journal
