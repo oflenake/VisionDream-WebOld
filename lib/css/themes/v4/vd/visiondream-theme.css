@@ -1,0 +1,137 @@
+/*!
+ * Created by:  VisionDream ICT Solutions
+ * Author:      Onkgopotse Lenake
+ * File:        VisionDream-Theme.CSS
+ * Version:     4.14.0
+ * Date:        2019-11-29
+ * Description:	VisionDream Theme Colors 4.14.0 by Onkgopotse Lenake and VisionDream contributors.
+ *
+ * © 2019 VisionDream ICT Solutions. All rights reserved.
+ */
+
+:root {
+  --vd-yellow-pure: #ffc000;
+  --vd-blue-capri: #00bfff;
+  --vd-grey: #9e9e9e;
+  --vd-blue-grey: #607d8b;
+  
+  --vd-white: #fff;
+  --vd-black: #000;
+  
+  --vd-primary: var(--vd-blue-capri);
+  --vd-secondary: var(--vd-yellow-pure);
+  --vd-tertiary: var(--vd-grey);
+  --vd-quaternary: var(--vd-blue-grey);
+  
+  --vd-theme-primary: var(--vd-primary);
+  --vd-theme-primary-light: #f0fbff;
+  --vd-theme-primary-dark: #006080;
+  
+  --vd-theme-secondary: var(--vd-secondary);
+  --vd-theme-secondary-light: #fffbf0;
+  --vd-theme-secondary-dark: #806000;
+  
+  --vd-theme-tertiary: var(--vd-tertiary);
+  --vd-theme-tertiary-light: #f9f9f9;
+  --vd-theme-tertiary-dark: #4f4f4f;
+  
+  --vd-theme-quaternary: var(--vd-quaternary);
+  --vd-theme-quaternary-light: #f5f7f8;
+  --vd-theme-quaternary-dark: #303e45;
+}
+
+/************************* VisionDream Theme: Primary Colors *************************/
+.vd-theme-primary-l5 {color: var(--vd-black) !important; background-color: var(--vd-theme-primary-light) !important}
+.vd-theme-primary-l4 {color: var(--vd-black) !important; background-color:#ccf2ff !important}
+.vd-theme-primary-l3 {color: var(--vd-black) !important; background-color:#99e6ff !important}
+.vd-theme-primary-l2 {color: var(--vd-black) !important; background-color:#66d9ff !important}
+.vd-theme-primary-l1 {color: var(--vd-white) !important; background-color:#33ccff !important}
+.vd-theme-primary-d1 {color: var(--vd-white) !important; background-color:#00ace6 !important}
+.vd-theme-primary-d2 {color: var(--vd-white) !important; background-color:#0099cc !important}
+.vd-theme-primary-d3 {color: var(--vd-white) !important; background-color:#0086b3 !important}
+.vd-theme-primary-d4 {color: var(--vd-white) !important; background-color:#007399 !important}
+.vd-theme-primary-d5 {color: var(--vd-white) !important; background-color: var(--vd-theme-primary-dark) !important}
+
+.vd-theme-primary-light {color: var(--vd-black) !important; background-color: var(--vd-theme-primary-light) !important}
+.vd-theme-primary-dark {color: var(--vd-white) !important; background-color: var(--vd-theme-primary-dark) !important}
+.vd-theme-primary-action {color: var(--vd-white) !important; background-color: var(--vd-theme-primary-dark) !important}
+
+.vd-theme-primary {color: var(--vd-white) !important; background-color: var(--vd-theme-primary) !important}
+.vd-text-theme-primary {color: var(--vd-theme-primary) !important}
+.vd-border-theme-primary {border-color: var(--vd-theme-primary) !important}
+
+.vd-hover-theme-primary:hover {color: var(--vd-white) !important; background-color: var(--vd-theme-primary) !important}
+.vd-hover-text-theme-primary:hover {color: var(--vd-theme-primary) !important}
+.vd-hover-border-theme-primary:hover {border-color: var(--vd-theme-primary) !important}
+
+/************************* VisionDream Theme: Secondary Colors *************************/
+.vd-theme-secondary-l5 {color: var(--vd-black) !important; background-color: var(--vd-theme-secondary-light) !important}
+.vd-theme-secondary-l4 {color: var(--vd-black) !important; background-color: #fff2cc !important}
+.vd-theme-secondary-l3 {color: var(--vd-black) !important; background-color: #ffe699 !important}
+.vd-theme-secondary-l2 {color: var(--vd-black) !important; background-color: #ffd966 !important}
+.vd-theme-secondary-l1 {color: var(--vd-black) !important; background-color: #ffcc33 !important}
+.vd-theme-secondary-d1 {color: var(--vd-black) !important; background-color: #e6ac00 !important}
+.vd-theme-secondary-d2 {color: var(--vd-white) !important; background-color: #cc9900 !important}
+.vd-theme-secondary-d3 {color: var(--vd-white) !important; background-color: #b38600 !important}
+.vd-theme-secondary-d4 {color: var(--vd-white) !important; background-color: #997300 !important}
+.vd-theme-secondary-d5 {color: var(--vd-white) !important; background-color: var(--vd-theme-secondary-dark) !important}
+
+.vd-theme-secondary-light {color: var(--vd-black) !important; background-color: var(--vd-theme-secondary-light) !important}
+.vd-theme-secondary-dark {color: var(--vd-white) !important; background-color: var(--vd-theme-secondary-dark) !important}
+.vd-theme-secondary-action {color: var(--vd-white) !important; background-color: var(--vd-theme-secondary-dark) !important}
+
+.vd-theme-secondary {color: var(--vd-black) !important; background-color: var(--vd-theme-secondary) !important}
+.vd-text-theme-secondary {color: var(--vd-theme-secondary) !important}
+.vd-border-theme-secondary {border-color: var(--vd-theme-secondary) !important}
+
+.vd-hover-theme-secondary:hover {color: var(--vd-black) !important; background-color: var(--vd-theme-secondary) !important}
+.vd-hover-text-theme-secondary:hover {color: var(--vd-theme-secondary) !important}
+.vd-hover-border-theme-secondary:hover {border-color: var(--vd-theme-secondary) !important}
+
+/************************* VisionDream Theme: Tertiary Colors *************************/
+.vd-theme-tertiary-l5 {color: var(--vd-black) !important; background-color: var(--vd-theme-tertiary-light) !important}
+.vd-theme-tertiary-l4 {color: var(--vd-black) !important; background-color:#ececec !important}
+.vd-theme-tertiary-l3 {color: var(--vd-black) !important; background-color:#d8d8d8 !important}
+.vd-theme-tertiary-l2 {color: var(--vd-black) !important; background-color:#c5c5c5 !important}
+.vd-theme-tertiary-l1 {color: var(--vd-black) !important; background-color:#b1b1b1 !important}
+.vd-theme-tertiary-d1 {color: var(--vd-white) !important; background-color:#8e8e8e !important}
+.vd-theme-tertiary-d2 {color: var(--vd-white) !important; background-color:#7e7e7e !important}
+.vd-theme-tertiary-d3 {color: var(--vd-white) !important; background-color:#6f6f6f !important}
+.vd-theme-tertiary-d4 {color: var(--vd-white) !important; background-color:#5f5f5f !important}
+.vd-theme-tertiary-d5 {color: var(--vd-white) !important; background-color: var(--vd-theme-tertiary-dark) !important}
+
+.vd-theme-tertiary-light {color: var(--vd-black) !important; background-color: var(--vd-theme-tertiary-light) !important}
+.vd-theme-tertiary-dark {color: var(--vd-white) !important; background-color: var(--vd-theme-tertiary-dark) !important}
+.vd-theme-tertiary-action {color: var(--vd-white) !important; background-color: var(--vd-theme-tertiary-dark) !important}
+
+.vd-theme-tertiary {color: var(--vd-white) !important; background-color: var(--vd-theme-tertiary) !important}
+.vd-text-theme-tertiary {color: var(--vd-theme-tertiary) !important}
+.vd-border-theme-tertiary {border-color: var(--vd-theme-tertiary) !important}
+
+.vd-hover-theme-tertiary:hover {color: var(--vd-white) !important; background-color: var(--vd-theme-tertiary) !important}
+.vd-hover-text-theme-tertiary:hover {color: var(--vd-theme-tertiary) !important}
+.vd-hover-border-theme-tertiary:hover {border-color: var(--vd-theme-tertiary) !important}
+
+/************************* VisionDream Theme: Quaternary Colors *************************/
+.vd-theme-quaternary-l5 {color: var(--vd-black) !important; background-color: var(--vd-theme-quaternary-light) !important}
+.vd-theme-quaternary-l4 {color: var(--vd-black) !important; background-color:#dfe5e8 !important}
+.vd-theme-quaternary-l3 {color: var(--vd-black) !important; background-color:#becbd2 !important}
+.vd-theme-quaternary-l2 {color: var(--vd-black) !important; background-color:#9eb1bb !important}
+.vd-theme-quaternary-l1 {color: var(--vd-white) !important; background-color:#7d97a5 !important}
+.vd-theme-quaternary-d1 {color: var(--vd-white) !important; background-color:#57707d !important}
+.vd-theme-quaternary-d2 {color: var(--vd-white) !important; background-color:#4d636f !important}
+.vd-theme-quaternary-d3 {color: var(--vd-white) !important; background-color:#435761 !important}
+.vd-theme-quaternary-d4 {color: var(--vd-white) !important; background-color:#3a4b53 !important}
+.vd-theme-quaternary-d5 {color: var(--vd-white) !important; background-color: var(--vd-theme-quaternary-dark) !important}
+
+.vd-theme-quaternary-light {color: var(--vd-black) !important; background-color: var(--vd-theme-quaternary-light) !important}
+.vd-theme-quaternary-dark {color: var(--vd-white) !important; background-color: var(--vd-theme-quaternary-dark) !important}
+.vd-theme-quaternary-action {color: var(--vd-white) !important; background-color: var(--vd-theme-quaternary-dark) !important}
+
+.vd-theme-quaternary {color: var(--vd-white) !important; background-color: var(--vd-theme-quaternary) !important}
+.vd-text-theme-quaternary {color: var(--vd-theme-quaternary) !important}
+.vd-border-theme-quaternary {border-color: var(--vd-theme-quaternary) !important}
+
+.vd-hover-theme-quaternary:hover {color: var(--vd-white) !important; background-color: var(--vd-theme-quaternary) !important}
+.vd-hover-text-theme-quaternary:hover {color: var(--vd-theme-quaternary) !important}
+.vd-hover-border-theme-quaternary:hover {border-color: var(--vd-theme-quaternary) !important}

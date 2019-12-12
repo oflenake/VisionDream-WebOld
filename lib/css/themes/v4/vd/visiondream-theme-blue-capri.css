@@ -1,0 +1,43 @@
+/*!
+ * Created by:  VisionDream ICT Solutions
+ * Author:      Onkgopotse Lenake
+ * File:        VisionDream-Theme-Blue-Capri.CSS
+ * Version:     4.14.0
+ * Date:        2019-11-27
+ * Description:	VisionDream Theme Blue Capri 4.14.0 by Onkgopotse Lenake and VisionDream contributors.
+ *
+ * © 2019 VisionDream ICT Solutions. All rights reserved.
+ */
+
+:root {
+  --vd-blue-capri: #00bfff;
+  --vd-white: #fff;
+  --vd-black: #000;
+  
+  --vd-theme: var(--vd-blue-capri);
+  --vd-theme-light: #f0fbff;
+  --vd-theme-dark: #006080;
+}
+
+.vd-theme-l5 {color: var(--vd-black) !important; background-color: var(--vd-theme-light) !important}
+.vd-theme-l4 {color: var(--vd-black) !important; background-color:#ccf2ff !important}
+.vd-theme-l3 {color: var(--vd-black) !important; background-color:#99e6ff !important}
+.vd-theme-l2 {color: var(--vd-black) !important; background-color:#66d9ff !important}
+.vd-theme-l1 {color: var(--vd-white) !important; background-color:#33ccff !important}
+.vd-theme-d1 {color: var(--vd-white) !important; background-color:#00ace6 !important}
+.vd-theme-d2 {color: var(--vd-white) !important; background-color:#0099cc !important}
+.vd-theme-d3 {color: var(--vd-white) !important; background-color:#0086b3 !important}
+.vd-theme-d4 {color: var(--vd-white) !important; background-color:#007399 !important}
+.vd-theme-d5 {color: var(--vd-white) !important; background-color: var(--vd-theme-dark) !important}
+
+.vd-theme-light {color: var(--vd-black) !important; background-color: var(--vd-theme-light) !important}
+.vd-theme-dark {color: var(--vd-white) !important; background-color: var(--vd-theme-dark) !important}
+.vd-theme-action {color: var(--vd-white) !important; background-color: var(--vd-theme-dark) !important}
+
+.vd-theme {color: var(--vd-white) !important; background-color: var(--vd-theme) !important}
+.vd-text-theme {color: var(--vd-theme) !important}
+.vd-border-theme {border-color: var(--vd-theme) !important}
+
+.vd-hover-theme:hover {color: var(--vd-white) !important; background-color: var(--vd-theme) !important}
+.vd-hover-text-theme:hover {color: var(--vd-theme) !important}
+.vd-hover-border-theme:hover {border-color: var(--vd-theme) !important}

@@ -1,0 +1,1314 @@
+/*!
+ * Created by:  VisionDream ICT Solutions
+ * Author:      Onkgopotse Lenake
+ * Email:       visiondreamict@gmail.com
+ * Website:     www.visiondream.wordpress.com
+ * 
+ * © 2019 VisionDream ICT Solutions. All rights reserved.
+ * 
+ * File:        VisionDream.CSS - VisionDream CSS Framework
+ * Version:     2.01 November 2019
+ * Date:        November 2019
+ * Purpose:     Official VisionDream used css framework added by author Onkgopotse Lenake.
+ */
+
+/**
+ * @license
+ * Copyright © 2019 VisionDream ICT Solutions. All rights reserved.
+ * 
+ * Use of this source code is governed by an MIT-style license that can be 
+ * found in the LICENSE file at http://visiondream.local/#/legal/terms
+ */
+
+/********************** Global color themes and variable properties **********************/
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+/*@import 'projects/visiondream-site/src/app/shared/styles/vd/css/site/visiondream.css';
+@import 'projects/visiondream-site/src/app/shared/styles/vd/css/site/visiondream-modal.css';
+@import 'projects/visiondream-site/src/app/shared/styles/vd/css/theme/visiondream-theme-blue.css';
+@import 'projects/visiondream-site/src/app/shared/styles/vendor/css/site/fontawesome.css';*/
+
+:root {
+  /********************** Vision yellow theme **********************/
+  --vd-yellow-electric: #ffff00;
+  --vd-yellow-electric-medium: #ffea00;
+  --vd-yellow-electric-large: #eaff00;
+  --vd-yellow-usc-gold-small: #ffcc00;
+  --vd-yellow-usc-gold-medium: #ffc000;
+  --vd-yellow-pure: #ffc000;
+  /********************** Dream blue theme **********************/
+  --vd-blue-capri-xsmall: #00ccff;
+  --vd-blue-capri-small: #00bfff;
+  --vd-blue-capri-medium: #00aaff;
+  --vd-blue-capri-large: #0099ff;
+  --vd-blue-capri-xlarge: #008df9;
+  --vd-blue-capri-xxlarge: #0080ff;
+  --vd-blue-original-small: #0033ff;
+  --vd-blue-original-medium: #0040ff;
+  --vd-blue-original-large: #0000ff;
+  --vd-blue-strong-small: #0072c6;
+  --vd-blue-strong-medium: #3366cc;
+  --vd-blue-strong-large: #0066cc;
+  --vd-blue-vivid-small: #027ff4;
+  --vd-blue-vivid-medium: #0066ff;
+  --vd-blue-soft: #4e73df;
+  --vd-blue-moderate-small: #6666cc;
+  --vd-blue-moderate-medium: #3f51b5;
+  --vd-blue-moderate-dark-small: #336699;
+  --vd-blue-moderate-dark-medium: #2d5986;
+  --vd-blue-moderate-dark-large: #264d73;
+  --vd-blue-dark-xsmall: #333366;
+  --vd-blue-dark-small: #204060;
+  --vd-blue-dark-medium: #000033;
+  --vd-blue-dark-large: #0e0c33;
+  /********************** Gray color theme **********************/
+  --vd-gray-light-xxsmall: #fafafa;
+  --vd-gray-light-xsmall: #f3f3f3;
+  --vd-gray-light-small: #eee;
+  --vd-gray-light-medium: #dddddd;
+  --vd-gray-light-large: #ccc;
+  --vd-gray-light-xlarge: #c0c0c0;
+  --vd-gray-dark-xxsmall: #999999;
+  --vd-gray-dark-xsmall: #7E7E7E;
+  --vd-gray-dark-small: #808080;
+  --vd-gray-dark-medium: #717171;
+  --vd-gray-dark-large: #616161;
+  --vd-gray-dark-xlarge: #333333;
+  --vd-gray-dark-sml-websafe: #666666;
+  /********************** Grayish blue color theme **********************/
+  --vd-grayish-blue-light-small: #f8f9fc;
+  --vd-grayish-blue-light-medium: #e9ecef;
+  --vd-grayish-blue-light-large: #cfd8dc;
+  --vd-grayish-blue-dark-small: #858796;
+  --vd-grayish-blue-dark-medium: #5a5c69;
+  --vd-grayish-blue-dark-large: #363640;
+  /********************** Cyan color theme **********************/
+  --vd-cyan-desaturated: #336666;
+  --vd-cyan-stong: #1abc9c;
+  --vd-cyan-stong-websafe: #33cc99;
+  --vd-cyan-green: #00ffc0;
+  --vd-cyan-green-websafe: #00ffcc;
+  --vd-cyan-moderate: #36b9cc;
+  --vd-cyan-dark: #007399;
+  --vd-cyan-moderate-dark: #339999;
+  --vd-cyan-waterspout: #00ffff;
+  --vd-cyan-capri: #00d4ff;
+  --vd-cyan-capri-websafe: #00ccff;
+  /********************** Green color theme **********************/
+  --vd-green-yellow: #adff2f;
+  --vd-green-vivid: #99ff33;
+  --vd-green-office: #008000; /* green */
+  --vd-green-electric: #00ff00;
+  --vd-green-lawn: #7cfc00;
+  --vd-green-pakistan: #006600;
+  --vd-green-bright: #66ff00;
+  --vd-green-light-sea: #20b2aa;
+  --vd-green-lime: #32cd32;
+  --vd-green-lime-dark: #006400;
+  --vd-green-lime-strong: #33cc33;
+  --vd-green-lime-lemon: #bfff00;
+  --vd-green-lime-electric: #ccff00;
+  --vd-green-lime-pure: #00ff33;
+  --vd-green-lime-cyan: #00ff40;
+  --vd-green-lime-cyan-dark: #009933;
+  --vd-green-lime-cyan-very-dark: #11862f;
+  /********************** Orange color theme **********************/
+  --vd-orange-bright: #f6c23e;
+  --vd-orange-vivid: #fd7e14;
+  --vd-orange-light: #ff7f50;
+  --vd-orange-pure: #ff8000;
+  --vd-orange-pure-light: #ff9900;
+  --vd-orange-pure-dark: #ff4000;
+  /********************** Red color theme **********************/
+  --vd-red-pure: #ff3300;
+  --vd-red-original: #ff0000;
+  --vd-red-passion: #ef212c;
+  --vd-red-vivid: #ff3333;
+  --vd-red-strong: #CC3333;
+  --vd-red-bright: #f44336;
+  --vd-red-bright-dim: #E03930;
+  --vd-red-light: #ff6666;
+  /********************** Other colors theme **********************/
+  --vd-transparent: transparent;
+  --vd-white: #fff;
+  --vd-black: #000;
+  --vd-violet-light: #9900ff;
+  --vd-violet-dark: #8000ff;
+  --vd-magenta: #ff00ff;
+  --vd-pink: #e83e8c;
+  --vd-indigo: #6610f2;
+  --vd-purple: #6f42c1;
+  --vd-teal: #20c9a6;
+  --vd-primary: var(--vd-blue-capri-small);
+  --vd-secondary: var(--vd-yellow-usc-gold-medium);
+  --vd-success: #1cc88a;
+  --vd-information: #36b9cc;
+  --vd-warning: #f6c23e;
+  --vd-danger: #e74a3b;
+  /********************** Social colors theme **********************/
+  --vd-color-fb: #4060A5;
+  --vd-color-li: #0094BC;
+  --vd-color-tt: #00ABE3;
+  --vd-color-gh: #000;
+  /********************** Custom variable properties **********************/
+  --vd-pw-100: 100%;
+  --vd-ph-100: 100%;
+  --vd-vw-100: 100vw;
+  --vd-vh-100: 100vh;
+  --vd-pw-40: 40%;
+  --vd-ph-40: 40%;
+  --vd-vw-40: 40vw;
+  --vd-vh-40: 40vh;
+  --vd-breakpoint-xs: 0;
+  --vd-breakpoint-sm: 576px;
+  --vd-breakpoint-md: 768px;
+  --vd-breakpoint-lg: 992px;
+  --vd-breakpoint-xl: 1200px;
+  --vd-font-family-nss: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --vd-font-family-mcn: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --vd-font-family-ras: Roboto, Arial, sans-serif;
+  --vd-font-family-rmd: Roboto, sans-serif;
+  --vd-font-family-rhs: Roboto, "Helvetica Neue", sans-serif;
+  --vd-font-family-oss: "Open Sans", sans-serif;
+  --vd-font-family-fa: "FontAwesome";
+  --vd-font-family-ss: sans-serif;
+  /********************** Icon codes - Social **********************/
+  --vd-brand-fb: "\f09a";
+  --vd-brand-li: "\f0e1";
+  --vd-brand-tt: "\f099";
+  --vd-brand-gh: "\f09b";
+  --vd-brand-gg: "\f1a0";
+  --vd-solid-angle-down: "\f107";
+  --vd-solid-angle-left: "\f104";
+  --vd-solid-angle-right: "\f105";
+  --vd-solid-angle-up: "\f106";
+  --vd-solid-caret-down: "\f0d7";
+  --vd-solid-caret-left: "\f0d9";
+  --vd-solid-caret-right: "\foda";
+  --vd-solid-caret-up: "\f150";
+  --vd-solid-book: "\f02d";
+  --visiondream-icon: "\f0c2";
+  --visiondream-logo: "\f0c2";
+  --visiondream-brand-icon: "\f0c2";
+  --visiondream-regular-icon: "\f0c2";
+  --visiondream-solid-icon: "\f0c2";
+  --visiondream-brand-logo: "\f0c2";
+  --visiondream-regular-logo: "\f0c2";
+  --visiondream-solid-logo: "\f0c2";
+}
+
+/********************** Global color themes and properties **********************/
+/*@import '~@angular/material/prebuilt-themes/indigo-pink.css';*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/** Resets for sidenav to take the whole page */
+html {
+  height: var(--vd-ph-100);
+  font-family: var(--vd-font-family-ss);
+  line-height: 1.15;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, #intro, main, nav, section, mat-tab-group,
+.vd-container, .vd-container-header, .vd-container-text, .vd-container-form {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: var(--vd-font-family-rmd);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--vd-gray-dark-xsmall);
+  text-align: left;
+  /*background-color: var(--vd-gray-light-small);*/
+  background: var(--vd-white);
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+#intro {
+  background: url('projects/visiondream-site/src/assets/content/img/site/full_bg.jpg')no-repeat center center fixed;
+  background-size: cover;
+}
+
+mat-tab-group {
+  text-align: left;
+}
+  mat-tab-group p {
+    padding-top: 1em;
+  }
+
+.vd-tab-body {
+  height: calc(100vh - 64px - 48px);
+}
+
+.vd-tab-action {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  button {
+    margin-bottom: 12px;
+  }
+}
+
+.vd-wrapper-layout {
+  height: var(--vd-ph-100);
+}
+
+.vd-wrapper-flex {
+  height: var(--vd-ph-100);
+}
+
+.vd-container-full-page {
+  height: calc(100vh - 114px);
+}
+
+.vd-container-full-screen {
+  width: var(--vd-pw-100);
+  height: var(--vd-vh-100);
+  padding: var(--vd-vh-40);
+}
+
+.vd-bg-img {
+  background: url('projects/visiondream-site/src/assets/content/img/site/full_bg.jpg') center/cover;
+}
+
+.vd-app-root {
+  background: inherit;
+  min-height: calc(100vh - 114px);
+  display: block;
+  position: relative;
+}
+
+.vd-app-welcome-title {
+  background: inherit;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+}
+
+.vd-app-welcome-tagline {
+  background: inherit;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.15;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.vd-app-welcome-text {
+  background: inherit;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+}
+
+/**
+* Global Container Styles - Start
+**/
+/*.vd-container {
+  width: 100%;
+  padding-right: 0.75em;
+  padding-left: 0.75em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .vd-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .vd-container {
+    max-width: 720px;
+  }
+}
+
+.vd-container-fluid {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}*/
+
+/**
+* Global Container Styles - End
+**/
+
+/** Scroll to top icon */
+.scroll-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  text-align: center;
+  color: var(--vd-white) !important;
+  background: rgba(90, 92, 105, 0.5);
+  line-height: 46px;
+}
+  .scroll-to-top:focus, .scroll-to-top:hover {
+    color: var(--vd-white) !important;
+  }
+  .scroll-to-top:hover {
+    background: var(--vd-grayish-blue-dark-medium) !important;
+  }
+  .scroll-to-top i {
+    font-weight: 800;
+  }
+
+.rounded-sm {
+  border-radius: 0.2rem !important;
+}
+
+.rounded {
+  border-radius: 0.35rem !important;
+}
+
+.rounded-top {
+  border-top-left-radius: 0.35rem !important;
+  border-top-right-radius: 0.35rem !important;
+}
+
+.rounded-right {
+  border-top-right-radius: 0.35rem !important;
+  border-bottom-right-radius: 0.35rem !important;
+}
+
+.rounded-bottom {
+  border-bottom-right-radius: 0.35rem !important;
+  border-bottom-left-radius: 0.35rem !important;
+}
+
+.rounded-left {
+  border-top-left-radius: 0.35rem !important;
+  border-bottom-left-radius: 0.35rem !important;
+}
+
+.rounded-lg {
+  border-radius: 0.3rem !important;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.rounded-pill {
+  border-radius: 50rem !important;
+}
+
+.rounded-0 {
+  border-radius: 0 !important;
+}
+
+/** Icon Sizes */
+.vd-icon-size {
+  font-size: 24px;
+  padding: 0 1px;
+}
+
+.vd-icon-padding {
+  padding: 0 2px;
+}
+
+/******************** Navigation Styles - Start ********************/
+/*----- Responsive nav -----*/
+.vd-container-nav-responsive {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.vd-mobile-toolbar .vd-topnav-toolbar {
+  position: fixed;
+  z-index: 2;
+}
+
+.vd-mobile-toolbar .vd-topnav-toolbar .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.vd-container-sidenav {
+  flex: 1;
+}
+
+.vd-mobile-toolbar .vd-container-sidenav {
+  flex: 1 0 auto;
+}
+
+/*----- Fixed nav -----*/
+.vd-container-nav-fixed {
+  position: absolute;
+  top: 60px;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+}
+
+.vd-sidenav-fixed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  background: var(--vd-gray-light-small) !important;
+}
+
+.vd-header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.vd-footer-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/******************** Navigation Styles - End ********************/
+
+/*----- Double navbar and sidenav CSS styles -----*/
+/*.navbar {
+  z-index: 1040;
+}
+
+.vd-side-nav {
+  margin-top: 57px !important;
+}
+
+.vd-double-nav .vd-breadcrumb-dn p {
+  color: var(--vd-clr-other-white);
+}
+
+@media (min-width: 1200px){
+.vd-fixed-sn main {
+    margin-left: 20% !important;
+    margin-right: 20% !important;
+  }
+}*/
+/******************** Navigation Styles - End ********************/
+
+/******************** Card and Form Styles - Start ********************/
+.vd-full-width {
+  width: var(--vd-pw-100);
+}
+
+.vd-card-min-width {
+  min-width: 120px;
+  margin: 20px auto;
+}
+
+.vd-card-max-width {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.vd-card-margin {
+  margin: 20px auto;
+}
+
+.vd-card-title, .vd-card-content, .vd-card-actions {
+  text-align: center;
+}
+
+.vd-card-title {
+  margin: 20px auto;
+  background: inherit;
+  color: var(--vd-white) !important;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.vd-form-min-width {
+  min-width: 150px;
+  max-width: 300px;
+  width: var(--vd-pw-100);
+}
+
+.vd-form-max-width {
+  min-width: 150px;
+  max-width: 450px;
+  width: var(--vd-pw-100);
+}
+
+.vd-form-support {
+  min-width: 150px;
+  width: var(--vd-pw-100);
+}
+
+.vd-form-field {
+  width: 400px;
+}
+
+.vd-form-item {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 0;
+}
+
+.mat-radio-button {
+  display: block;
+  margin: 5px 0;
+}
+
+.vd-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.vd-col {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.vd-col:last-child {
+  margin-right: 0;
+}
+
+.vd-container-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.vd-container-card > * {
+  width: var(--vd-pw-100);
+}
+
+.vd-container-card mat-card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.vd-container-card mat-card > * {
+  margin: 5px 0;
+}
+
+.vd-container-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.vd-container-form > * {
+  width: var(--vd-pw-100);
+}
+
+.vd-container-form form {
+  margin-bottom: 20px;
+}
+
+.vd-container-form form > * {
+  margin: 5px 0;
+}
+
+.vd-container-form .vd-form-support {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.vd-container-form .vd-form-support > * {
+  margin: 10px 0;
+}
+
+.vd-container-form .mat-checkbox,
+.vd-container-form .mat-radio-button {
+  margin: 0 10px;
+}
+/******************** Card and Forms Styles - End ************************/
+
+/********************** VisionDream Styles - Start **********************/
+.vd-container {
+  background: inherit;
+  width: var(--vd-pw-100);
+  padding-right: .75em;
+  padding-left: .75em;
+  margin-right: auto;
+  margin-left: auto;
+}
+  .vd-container-header {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+    .vd-container-text {
+      background: inherit;
+      font-size: 1.5em;
+      font-weight: 500;
+      text-shadow: 2px 3px 5px var(--vd-gray-dark-medium) !important;
+    }
+
+.vd-section-header {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+$vd-font-small-point: 8pt !default;
+$vd-font-small-percent: 80% !default;
+
+.vd-font-small-pt {
+  font-size: $vd-font-small-point;
+}
+
+.vd-font-small-pc {
+  font-size: $vd-font-small-percent;
+}
+
+.vd-heading-text-center {
+  background: inherit;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.vd-heading-text-left {
+  background: inherit;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: left;
+}
+
+.vd-paragraph-text-center {
+  background: inherit;
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.vd-paragraph-text-left {
+  background: inherit;
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.vd-control-text {
+  background: inherit;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.vd-tooltip-black {
+  background: var(--vd-black) !important;
+}
+
+.vd-spacer {
+  background: var(--vd-transparent) !important;
+  flex: 1 1 auto;
+}
+
+.vd-spacer-right {
+  background: var(--vd-transparent) !important;
+  flex: 1 1 auto;
+}
+
+.vd-spacer-left {
+  background: var(--vd-transparent) !important;
+  flex: auto 1 1;
+}
+
+.vd-caption {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  color: var(--vd-gray-dark-medium) !important;
+  text-align: left;
+  caption-side: bottom;
+}
+
+.vd-caption-left {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.vd-caption-right {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.vd-icon-16 {
+  background: var(--vd-transparent) !important;
+  font-size: 16px;
+}
+
+.vd-icon-20 {
+  background: var(--vd-transparent) !important;
+  font-size: 20px;
+}
+
+.vd-icon-24 {
+  background: var(--vd-transparent) !important;
+  font-size: 24px;
+}
+
+.vd-icon-extra-small {
+  background: var(--vd-transparent) !important;
+  font-size: 8px;
+  padding: 0 10px;
+}
+
+.vd-icon-small {
+  background: var(--vd-transparent) !important;
+  font-size: 12px;
+  padding: 0;
+}
+
+.vd-icon-small-left {
+  background: var(--vd-transparent) !important;
+  font-size: 12px;
+  padding: 0;
+}
+
+.vd-icon-small-right {
+  background: var(--vd-transparent) !important;
+  font-size: 12px;
+  padding: 0;
+}
+
+.vd-item-padding {
+  background: inherit;
+  margin: 14px 0 14px 0;
+  padding-left: 0 5px;
+}
+
+.vd-group-padding {
+  background: inherit;
+  padding: 0 -5px;
+}
+
+/********************** VisionDream Styles - End **********************/
+.vd-border-top {
+  border-top: 1px solid var(--vd-gray-dark-medium) !important;
+}
+
+table {
+  width: 100%;
+}
+
+a {
+  display: inline-block;
+  /*color: var(--vd-blue-soft) !important;*/
+  text-decoration: none;
+  background: var(--vd-transparent) !important;
+  cursor: pointer;
+}
+  a:active,
+  a:hover,
+  a:focus {
+    display: inline-block;
+    /*color: var(--vd-blue-strong-medium) !important;*/
+    text-decoration: none;
+    background: inherit;
+    cursor: pointer;
+  }
+
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+caption {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  color: var(--vd-gray-dark-medium) !important;
+  text-align: left;
+  caption-side: bottom;
+}
+
+th {
+  text-align: inherit;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
+
+address {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-style: normal;
+  line-height: inherit;
+}
+
+ol, ul, dl {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 80%;
+}
+
+.opacity {
+  opacity: 1.0 !important;
+}
+
+/**
+ * Vision-Dream Brand Main Colors - Start
+ */
+/******************************** Vision Yellow Definition ********************************/
+.vd-bg-base-vision {
+  background: var(--vd-yellow-usc-gold-small) !important;
+}
+
+.vd-fg-base-vision {
+  color: var(--vd-yellow-usc-gold-small) !important;
+}
+
+.vd-bg-primary-vision {
+  background: var(--vd-secondary) !important;
+}
+
+.vd-fg-primary-vision {
+  color: var(--vd-secondary) !important;
+}
+
+.vd-bg-secondary-vision {
+  background: var(--vd-yellow-usc-gold-small) !important;
+}
+
+.vd-fg-secondary-vision {
+  color: var(--vd-yellow-usc-gold-small) !important;
+}
+
+/******************************** Dream Blue Definition ********************************/
+.vd-bg-base-dream {
+  background: var(--vd-blue-vivid-medium) !important;
+}
+
+.vd-fg-base-dream {
+  color: var(--vd-blue-vivid-medium) !important;
+}
+
+.vd-bg-primary-dream {
+  background: var(--vd-primary) !important;
+}
+
+.vd-fg-primary-dream {
+  color: var(--vd-primary) !important;
+}
+
+.vd-bg-secondary-dream {
+  background: var(--vd-blue-capri-medium) !important;
+}
+
+.vd-fg-secondary-dream {
+  color: var(--vd-blue-capri-medium) !important;
+}
+
+/******************************** Gray and other definition ********************************/
+.vd-bg-cover-light {
+  background: var(--vd-grayish-blue-light-small) !important;
+}
+
+.vd-bg-cover-dark {
+  background: var(--vd-grayish-blue-dark-medium) !important;
+}
+
+.vd-bg-dark-gray {
+  background: var(--vd-gray-dark-medium) !important;
+}
+
+.vd-fg-dark-gray {
+  color: var(--vd-gray-dark-medium) !important;
+}
+
+.vd-bg-body {
+  background: var(--vd-gray-light-small) !important;
+}
+
+.vd-fg-body {
+  color: var(--vd-gray-light-small) !important;
+}
+
+.vd-bg-light-gray {
+  background: var(--vd-grayish-blue-light-small) !important;
+}
+
+.vd-fg-light-gray {
+  color: var(--vd-grayish-blue-light-small) !important;
+}
+
+.vd-bg-very-light-gray-white {
+  background: var(--vd-gray-light-xxsmall) !important;
+}
+
+.vd-fg-very-light-gray-white {
+  color: var(--vd-gray-light-xxsmall) !important;
+}
+
+.vd-bg-white {
+  background: var(--vd-white) !important;
+}
+
+.vd-fg-white {
+  color: var(--vd-white) !important;
+}
+
+.vd-bg-black {
+  background: var(--vd-black) !important;
+}
+
+.vd-fg-black {
+  color: var(--vd-black) !important;
+}
+
+.vd-bg-transparent {
+  background: var(--vd-transparent) !important;
+}
+
+.vd-fg-transparent {
+  color: var(--vd-transparent) !important;
+}
+
+/**
+ * Vision-Dream Brand Main Colors - End
+ */
+
+/********************** VisionDream Button **********************/
+#vd-btn-container {
+  margin: 1em .5em;
+  text-align: center;
+}
+  .vd-btn-global {
+    color: var(--vd-white) !important;
+    display: inline-block;
+    position: relative;
+    width: var(--vd-pw-100);
+    /*height: 50px;*/
+    padding: 4px 12px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 2em;
+    cursor: pointer;
+    border: 2px solid var(--vd-transparent) !important;
+    box-shadow: 0 3px 3px var(--vd-transparent) !important;
+    border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+  }
+    /********************** Vision primary button **********************/
+    .vd-btn-vision-primary {
+      background: var(--vd-secondary) !important;
+      color: var(--vd-white) !important;
+      border: 2px solid var(--vd-yellow-usc-gold-small) !important;
+    }
+      .vd-btn-vision-primary:before {
+        font-family: var(--vd-font-family-fa);
+        content: var(--visiondream-icon);
+      }
+      .vd-btn-vision-primary:hover,
+      .vd-btn-vision-primary:focus {
+        background: var(--vd-yellow-usc-gold-small) !important;
+        color: var(--vd-white) !important;
+        border-color: var(--vd-secondary) !important;
+        /*opacity: 0.8;*/
+      }
+      .vd-btn-vision-primary:disabled {
+        /*opacity: 0.5;*/
+        cursor: not-allowed;
+      }
+    /********************** Vision Secondary button **********************/
+    .vd-btn-vision-secondary {
+      background: transparent !important;
+      color: var(--vd-secondary) !important;
+      border: 2px solid var(--vd-secondary) !important;
+    }
+      .vd-btn-vision-secondary:before {
+        font-family: var(--vd-font-family-fa);
+        content: var(--visiondream-icon);
+      }
+      .vd-btn-vision-secondary:hover,
+      .vd-btn-vision-secondary:focus {
+        background: var(--vd-secondary) !important;
+        color: var(--vd-white) !important;
+        border-color: var(--vd-yellow-usc-gold-small) !important;
+        /*opacity: 0.8;*/
+      }
+      .vd-btn-vision-secondary:disabled {
+        /*opacity: 0.5;*/
+        cursor: not-allowed;
+      }    
+    /********************** Dream Primary button **********************/
+    .vd-btn-dream-primary {
+      background: var(--vd-primary) !important;
+      color: var(--vd-white) !important;
+    }
+      .vd-btn-dream-primary:before {
+        font-family: var(--vd-font-family-fa);
+        content: var(--visiondream-icon);
+      }
+      .vd-btn-dream-primary:hover,
+      .vd-btn-dream-primary:focus {
+        background: var(--vd-white) !important;
+        color: var(--vd-secondary) !important;
+        border-color: var(--vd-primary) !important;
+        /*opacity: 0.8;*/
+      }
+      .vd-btn-dream-primary:disabled {
+        /*opacity: 0.5;*/
+        cursor: not-allowed;
+      }
+    /********************** Dream Secondary button **********************/
+    .vd-btn-dream-secondary {
+      background: transparent !important;
+      color: var(--vd-primary) !important;
+      border: 2px solid var(--vd-primary) !important;
+    }
+      .vd-btn-dream-secondary:before {
+        font-family: var(--vd-font-family-fa);
+        content: var(--visiondream-icon);
+      }
+      .vd-btn-dream-secondary:hover,
+      .vd-btn-dream-secondary:focus {
+        background: var(--vd-primary) !important;
+        color: var(--vd-white) !important;
+        border-color: var(--vd-blue-capri-xxlarge) !important;
+        /*opacity: 0.8;*/
+      }
+      .vd-btn-dream-secondary:disabled {
+        /*opacity: 0.5;*/
+        cursor: not-allowed;
+      }
+
+    /********************** Dream Primary Outline button **********************/
+    .vd-btn-dream-primary-outline {
+      background: var(--vd-transparent) !important;
+      color: var(--vd-white) !important;
+      border: 2px solid var(--vd-white) !important;
+      border-radius: 2em;
+    }
+      .vd-btn-dream-primary-outline:after {
+        font-family: var(--vd-font-family-fa);
+        content: var(--vd-solid-angle-right);
+      }
+      .vd-btn-dream-primary-outline:hover {
+        background: var(--vd-primary) !important;
+        color: var(--vd-white) !important;
+        border: 2px solid var(--vd-white) !important;
+        box-shadow: 0 3px 3px var(--vd-gray-dark-medium) !important;
+      }
+      /*.vd-btn-dream-primary-outline:hover,
+      .vd-btn-dream-primary-outline:focus {
+        background: var(--vd-primary) !important;
+        color: var(--vd-white) !important;
+        border-color: var(--vd-blue-capri-xxlarge) !important;
+      }*/
+/********************** VisionDream fancy buttons **********************/
+.vd-btn-vision-fancy {
+  background: var(--vd-white) !important;
+  color: var(--vd-secondary) !important;
+}
+  .vd-btn-vision-fancy i.material-icons {
+    color: var(--vd-secondary) !important;
+    padding-right: 4px;
+  }
+
+.vd-btn-dream-fancy {
+  background: var(--vd-white) !important;
+  color: var(--vd-primary) !important;
+}
+  .vd-btn-dream-fancy i.material-icons {
+    color: var(--vd-primary) !important;
+    padding-right: 4px;
+  }
+/******************************** Custom social button icons definition - Start  ********************************/
+#vd-btn-container-social {
+  margin: 1em .5em;
+  text-align: center;
+}
+  .vd-btn-global-social {
+    color: var(--vd-white) !important;
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    cursor: pointer;
+    border: 2px solid var(--vd-transparent) !important;
+    box-shadow: 0 3px 3px var(--vd-gray-dark-medium) !important;
+    border-radius: 27px;
+    -webkit-border-radius: 27px;
+    -moz-border-radius: 27px;
+  }
+    /** Facebook button */
+    .vd-btn-facebook {
+      background: var(--vd-color-fb) !important;
+    }
+      /* Use :before to add the relevant icons */
+      .vd-btn-facebook:before {
+        font-family: var(--vd-font-family-fa);
+        content: var(--vd-brand-fb);   /* add facebook icon */
+      }
+      .vd-btn-facebook:hover,
+      .vd-btn-facebook:focus {
+        color: var(--vd-secondary) !important;
+        background: var(--vd-white) !important;
+        border-color: var(--vd-color-fb) !important;
+      }
+    /** Linkedin button */
+    .vd-btn-linkedin {
+      background: var(--vd-color-li) !important;
+    }
+      .vd-btn-linkedin:before {
+        font-family: var(--vd-font-family-fa);
+        content: var(--vd-brand-li);
+      }
+      .vd-btn-linkedin:hover,
+      .vd-btn-linkedin:focus {
+        color: var(--vd-secondary) !important;
+        background: var(--vd-white) !important;
+        border-color: var(--vd-color-li) !important;
+      }
+    /** Twitter button */
+    .vd-btn-twitter {
+      background: var(--vd-color-tt) !important;
+    }
+      .vd-btn-twitter:before {
+        font-family: var(--vd-font-family-fa);
+        content: var(--vd-brand-tt);
+      }
+      .vd-btn-twitter:hover,
+      .vd-btn-twitter:focus {
+        color: var(--vd-secondary) !important;
+        background: var(--vd-white) !important;
+        border-color: var(--vd-color-tt) !important;
+      }
+    /** GitHub button */
+    .vd-btn-github {
+      background: var(--vd-color-gh) !important;
+    }
+      .vd-btn-github:before {
+        font-family: var(--vd-font-family-fa);
+        content: var(--vd-brand-gh);
+      }
+      .vd-btn-github:hover,
+      .vd-btn-github:focus {
+        color: var(--vd-secondary) !important;
+        background: var(--vd-white) !important;
+        border-color: var(--vd-color-gh) !important;
+      }
+/******************************** Custom social button icons definition - End ********************************/
+.vd-container-ripple {
+  cursor: pointer;
+  text-align: center;
+  /*width: 300px;
+  height: 300px;
+  line-height: 300px;*/
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: var(--vd-transparent) !important;
+}
+
+.vd-ripple-checkbox {
+  margin: 6px 12px 6px 0;
+}
+
+.vd-ripple-form-field {
+  margin: 0 12px 0 0;
+}

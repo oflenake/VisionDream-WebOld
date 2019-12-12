@@ -1,0 +1,486 @@
+/*!
+ * Created by:  VisionDream ICT Solutions
+ * Author:      Onkgopotse Lenake
+ * File:        VisionDream-Colors-Mat-2014.CSS
+ * Version:     4.14.0
+ * Date:        2019-11-27
+ * Description:	VisionDream Colors Mat 2014 v4.14.0 by Onkgopotse Lenake and VisionDream contributors.
+ *
+ * © 2019 VisionDream ICT Solutions. All rights reserved.
+ */
+
+/****************** VisionDream Colors: Red ******************/
+.vd-red-50 {color: #000 !important; background-color: #FFEBEE !important}
+.vd-red-100 {color: #000 !important; background-color: #FFCDD2 !important}
+.vd-red-200 {color: #000 !important; background-color: #EF9A9A !important}
+.vd-red-300 {color: #FFF !important; background-color: #E57373 !important}
+.vd-red-400 {color: #FFF !important; background-color: #EF5350 !important}
+.vd-red-500 {color: #FFF !important; background-color: #F44336 !important}
+.vd-red-600 {color: #FFF !important; background-color: #E53935 !important}
+.vd-red-700 {color: #FFF !important; background-color: #D32F2F !important}
+.vd-red-800 {color: #FFF !important; background-color: #C62828 !important}
+.vd-red-900 {color: #FFF !important; background-color: #B71C1C !important}
+
+.vd-red-A100 {color: #FFF !important; background-color: #FF8A80 !important}
+.vd-red-A200 {color: #000 !important; background-color: #FF5252 !important}
+.vd-red-A400 {color: #000 !important; background-color: #FF1744 !important}
+.vd-red-A700 {color: #000 !important; background-color: #D50000 !important}
+
+/****************** VisionDream Colors: Pink ******************/
+/*.vd-pink-50 {color: #000 !important; background-color: #FCE4EC !important}
+.vd-pink-100
+#F8BBD0
+.vd-pink-200
+#F48FB1
+.vd-pink-300
+#F06292
+.vd-pink-400
+#EC407A
+.vd-pink-500
+#E91E63
+.vd-pink-600
+#D81B60
+.vd-pink-700
+#C2185B
+.vd-pink-800
+#AD1457
+.vd-pink-900
+#880E4F
+.vd-pink-A100
+#FF80AB
+.vd-pink-A200
+#FF4081
+.vd-pink-A400
+#F50057
+.vd-pink-A700
+#C51162*/
+
+/****************** VisionDream Colors: Purple ******************/
+/*.vd-purple-50
+#F3E5F5
+.vd-purple-100
+#E1BEE7
+.vd-purple-200
+#CE93D8
+.vd-purple-300
+#BA68C8
+.vd-purple-400
+#AB47BC
+.vd-purple-500
+#9C27B0
+.vd-purple-600
+#8E24AA
+.vd-purple-700
+#7B1FA2
+.vd-purple-800
+#6A1B9A
+.vd-purple-900
+#4A148C
+.vd-purple-A100
+#EA80FC
+.vd-purple-A200
+#E040FB
+.vd-purple-A400
+#D500F9
+.vd-purple-A700
+#AA00FF*/
+
+/****************** VisionDream Colors: Deep Purple ******************/
+/*.vd-deep-purple-50
+#EDE7F6
+.vd-deep-purple-100
+#D1C4E9
+.vd-deep-purple-200
+#B39DDB
+.vd-deep-purple-300
+#9575CD
+.vd-deep-purple-400
+#7E57C2
+.vd-deep-purple-500
+#673AB7
+.vd-deep-purple-600
+#5E35B1
+.vd-deep-purple-700
+#512DA8
+.vd-deep-purple-800
+#4527A0
+.vd-deep-purple-900
+#311B92
+.vd-deep-purple-A100
+#B388FF
+.vd-deep-purple-A200
+#7C4DFF
+.vd-deep-purple-A400
+#651FFF
+.vd-deep-purple-A700
+#6200EA*/
+
+/****************** VisionDream Colors: Indigo ******************/
+/*.vd-indigo-50
+#E8EAF6
+.vd-indigo-100
+#C5CAE9
+.vd-indigo-200
+#9FA8DA
+.vd-indigo-300
+#7986CB
+.vd-indigo-400
+#5C6BC0
+.vd-indigo-500
+#3F51B5
+.vd-indigo-600
+#3949AB
+.vd-indigo-700
+#303F9F
+.vd-indigo-800
+#283593
+.vd-indigo-900
+#1A237E
+.vd-indigo-A100
+#8C9EFF
+.vd-indigo-A200
+#536DFE
+.vd-indigo-A400
+#3D5AFE
+.vd-indigo-A700
+#304FFE*/
+
+/****************** VisionDream Colors: Blue ******************/
+.vd-blue-50 {color: #000 !important; background-color: #E3F2FD !important}
+.vd-blue-100 {color: #000 !important; background-color: #BBDEFB !important}
+.vd-blue-200 {color: #000 !important; background-color: #90CAF9 !important}
+.vd-blue-300 {color: #000 !important; background-color: #64B5F6 !important}
+.vd-blue-400 {color: #FFF !important; background-color: #42A5F5 !important}
+.vd-blue-500 {color: #FFF !important; background-color: #2196F3 !important}
+.vd-blue-600 {color: #FFF !important; background-color: #1E88E5 !important}
+.vd-blue-700 {color: #FFF !important; background-color: #1976D2 !important}
+.vd-blue-800 {color: #FFF !important; background-color: #1565C0 !important}
+.vd-blue-900 {color: #FFF !important; background-color: #0D47A1 !important}
+
+.vd-blue-A100 {color: #FFF !important; background-color: #82B1FF !important}
+.vd-blue-A200 {color: #000 !important; background-color: #448AFF !important}
+.vd-blue-A400 {color: #000 !important; background-color: #2979FF !important}
+.vd-blue-A700 {color: #000 !important; background-color: #2962FF !important}
+
+/****************** VisionDream Colors: Light Blue ******************/
+.vd-light-blue-50 {color: #000 !important; background-color: #E1F5FE !important}
+.vd-light-blue-100 {color: #000 !important; background-color: #B3E5FC !important}
+.vd-light-blue-200 {color: #000 !important; background-color: #81D4FA !important}
+.vd-light-blue-300 {color: #000 !important; background-color: #4FC3F7 !important}
+.vd-light-blue-400 {color: #FFF !important; background-color: #29B6F6 !important}
+.vd-light-blue-500 {color: #FFF !important; background-color: #03A9F4 !important}
+.vd-light-blue-600 {color: #FFF !important; background-color: #039BE5 !important}
+.vd-light-blue-700 {color: #FFF !important; background-color: #0288D1 !important}
+.vd-light-blue-800 {color: #FFF !important; background-color: #0277BD !important}
+.vd-light-blue-900 {color: #FFF !important; background-color: #01579B !important}
+
+.vd-light-blue-A100 {color: #FFF !important; background-color: #80D8FF !important}
+.vd-light-blue-A200 {color: #000 !important; background-color: #40C4FF !important}
+.vd-light-blue-A400 {color: #000 !important; background-color: #00B0FF !important}
+.vd-light-blue-A700 {color: #000 !important; background-color: #0091EA !important}
+
+/****************** VisionDream Colors: Cyan ******************/
+/*.vd-cyan-50
+#E0F7FA
+.vd-cyan-100
+#B2EBF2
+.vd-cyan-200
+#80DEEA
+.vd-cyan-300
+#4DD0E1
+.vd-cyan-400
+#26C6DA
+.vd-cyan-500
+#00BCD4
+.vd-cyan-600
+#00ACC1
+.vd-cyan-700
+#0097A7
+.vd-cyan-800
+#00838F
+.vd-cyan-900
+#006064
+.vd-cyan-A100
+#84FFFF
+.vd-cyan-A200
+#18FFFF
+.vd-cyan-A400
+#00E5FF
+.vd-cyan-A700
+#00B8D4*/
+
+/****************** VisionDream Colors: Teal ******************/
+/*.vd-teal-50
+#E0F2F1
+.vd-teal-100
+#B2DFDB
+.vd-teal-200
+#80CBC4
+.vd-teal-300
+#4DB6AC
+.vd-teal-400
+#26A69A
+.vd-teal-500
+#009688
+.vd-teal-600
+#00897B
+.vd-teal-700
+#00796B
+.vd-teal-800
+#00695C
+.vd-teal-900
+#004D40
+.vd-teal-A100
+#A7FFEB
+.vd-teal-A200
+#64FFDA
+.vd-teal-A400
+#1DE9B6
+.vd-teal-A700
+#00BFA5*/
+
+/****************** VisionDream Colors: Green ******************/
+/*.vd-green-50
+#E8F5E9
+.vd-green-100
+#C8E6C9
+.vd-green-200
+#A5D6A7
+.vd-green-300
+#81C784
+.vd-green-400
+#66BB6A
+.vd-green-500
+#4CAF50
+.vd-green-600
+#43A047
+.vd-green-700
+#388E3C
+.vd-green-800
+#2E7D32
+.vd-green-900
+#1B5E20
+.vd-green-A100
+#B9F6CA
+.vd-green-A200
+#69F0AE
+.vd-green-A400
+#00E676
+.vd-green-A700
+#00C853*/
+
+/****************** VisionDream Colors: Light Green ******************/
+/*.vd-light-green-50
+#F1F8E9
+.vd-light-green-100
+#DCEDC8
+.vd-light-green-200
+#C5E1A5
+.vd-light-green-300
+#AED581
+.vd-light-green-400
+#9CCC65
+.vd-light-green-500
+#8BC34A
+.vd-light-green-600
+#7CB342
+.vd-light-green-700
+#689F38
+.vd-light-green-800
+#558B2F
+.vd-light-green-900
+#33691E
+.vd-light-green-A100
+#CCFF90
+.vd-light-green-A200
+#B2FF59
+.vd-light-green-A400
+#76FF03
+.vd-light-green-A700
+#64DD17*/
+
+/****************** VisionDream Colors: Lime ******************/
+/*.vd-lime-50
+#F9FBE7
+.vd-lime-100
+#F0F4C3
+.vd-lime-200
+#E6EE9C
+.vd-lime-300
+#DCE775
+.vd-lime-400
+#D4E157
+.vd-lime-500
+#CDDC39
+.vd-lime-600
+#C0CA33
+.vd-lime-700
+#AFB42B
+.vd-lime-800
+#9E9D24
+.vd-lime-900
+#827717
+.vd-lime-A100
+#F4FF81
+.vd-lime-A200
+#EEFF41
+.vd-lime-A400
+#C6FF00
+.vd-lime-A700
+#AEEA00*/
+
+/****************** VisionDream Colors: Yellow ******************/
+/*.vd-yellow-50
+#FFFDE7
+.vd-yellow-100
+#FFF9C4
+.vd-yellow-200
+#FFF59D
+.vd-yellow-300
+#FFF176
+.vd-yellow-400
+#FFEE58
+.vd-yellow-500
+#FFEB3B
+.vd-yellow-600
+#FDD835
+.vd-yellow-700
+#FBC02D
+.vd-yellow-800
+#F9A825
+.vd-yellow-900
+#F57F17
+.vd-yellow-A100
+#FFFF8D
+.vd-yellow-A200
+#FFFF00
+.vd-yellow-A400
+#FFEA00
+.vd-yellow-A700
+#FFD600*/
+
+/****************** VisionDream Colors: Amber ******************/
+.vd-amber-50 {color: #000 !important; background-color: #FFF8E1 !important}
+.vd-amber-100 {color: #000 !important; background-color: #FFECB3 !important}
+.vd-amber-200 {color: #000 !important; background-color: #FFE082 !important}
+.vd-amber-300 {color: #000 !important; background-color: #FFD54F !important}
+.vd-amber-400 {color: #000 !important; background-color: #FFCA28 !important}
+.vd-amber-500 {color: #000 !important; background-color: #FFC107 !important}
+.vd-amber-600 {color: #FFF !important; background-color: #FFB300 !important}
+.vd-amber-700 {color: #FFF !important; background-color: #FFA000 !important}
+.vd-amber-800 {color: #FFF !important; background-color: #FF8F00 !important}
+9.vd-amber-00 {color: #FFF !important; background-color: #FF6F00 !important}
+.vd-amber-A100 {color: #000 !important; background-color: #FFE57F !important}
+.vd-amber-A200 {color: #FFF !important; background-color: #FFD740 !important}
+.vd-amber-A400 {color: #FFF !important; background-color: #FFC400 !important}
+.vd-amber-A700 {color: #FFF !important; background-color: #FFAB00 !important}
+
+/****************** VisionDream Colors: Orange ******************/
+/*.vd-orange-50
+#FFF3E0
+.vd-orange-100
+#FFE0B2
+.vd-orange-200
+#FFCC80
+.vd-orange-300
+#FFB74D
+.vd-orange-400
+#FFA726
+.vd-orange-500
+#FF9800
+.vd-orange-600
+#FB8C00
+.vd-orange-700
+#F57C00
+.vd-orange-800
+#EF6C00
+.vd-orange-900
+#E65100
+.vd-orange-A100
+#FFD180
+.vd-orange-A200
+#FFAB40
+.vd-orange-A400
+#FF9100
+.vd-orange-A700
+#FF6D00*/
+
+/****************** VisionDream Colors: Deep Orange ******************/
+/*.vd-deep-orange-50
+#FBE9E7
+.vd-deep-orange-100
+#FFCCBC
+.vd-deep-orange-200
+#FFAB91
+.vd-deep-orange-300
+#FF8A65
+.vd-deep-orange-400
+#FF7043
+.vd-deep-orange-500
+#FF5722
+.vd-deep-orange-600
+#F4511E
+.vd-deep-orange-700
+#E64A19
+.vd-deep-orange-800
+#D84315
+.vd-deep-orange-900
+#BF360C
+.vd-deep-orange-A100
+#FF9E80
+A.vd-deep-orange-200
+#FF6E40
+.vd-deep-orange-A400
+#FF3D00
+.vd-deep-orange-A700
+#DD2C00*/
+
+/****************** VisionDream Colors: Brown ******************/
+/*.vd-brown-50
+#EFEBE9
+.vd-brown-100
+#D7CCC8
+.vd-brown-200
+#BCAAA4
+.vd-brown-300
+#A1887F
+.vd-brown-400
+#8D6E63
+.vd-brown-500
+#795548
+.vd-brown-600
+#6D4C41
+.vd-brown-700
+#5D4037
+.vd-brown-800
+#4E342E
+.vd-brown-900
+#3E2723*/
+
+/****************** VisionDream Colors: Gray ******************/
+.vd-gray-50 {color: #000 !important; background-color: #FAFAFA !important}
+.vd-gray-100 {color: #000 !important; background-color: #F5F5F5 !important}
+.vd-gray-200 {color: #000 !important; background-color: #EEEEEE !important}
+.vd-gray-300 {color: #000 !important; background-color: #E0E0E0 !important}
+.vd-gray-400 {color: #FFF !important; background-color: #BDBDBD !important}
+.vd-gray-500 {color: #FFF !important; background-color: #9E9E9E !important}
+.vd-gray-600 {color: #FFF !important; background-color: #757575 !important}
+.vd-gray-700 {color: #FFF !important; background-color: #616161 !important}
+.vd-gray-800 {color: #FFF !important; background-color: #424242 !important}
+.vd-gray-900 {color: #FFF !important; background-color: #212121 !important}
+
+/****************** VisionDream Colors: Blue Gray ******************/
+.vd-blue-gray-50 {color: #000 !important; background-color: #ECEFF1 !important}
+.vd-blue-gray-100 {color: #000 !important; background-color: #CFD8DC !important}
+.vd-blue-gray-200 {color: #000 !important; background-color: #B0BEC5 !important}
+.vd-blue-gray-300 {color: #000 !important; background-color: #90A4AE !important}
+.vd-blue-gray-400 {color: #FFF !important; background-color: #78909C !important}
+.vd-blue-gray-500 {color: #FFF !important; background-color: #607D8B !important}
+.vd-blue-gray-600 {color: #FFF !important; background-color: #546E7A !important}
+.vd-blue-gray-700 {color: #FFF !important; background-color: #455A64 !important}
+.vd-blue-gray-800 {color: #FFF !important; background-color: #37474F !important}
+.vd-blue-gray-900 {color: #FFF !important; background-color: #263238 !important}
+
+/****************** VisionDream Colors: Black and White ******************/
+.vd-black-50 {color: #FFFFFF !important; background-color: #000000 !important}
+.vd-white-50 {color: #000000 !important; background-color: #FFFFFF !important}
