@@ -1,8 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\lib",
+    "\\lib\\css",
+    "\\lib\\css\\styles",
+    "\\lib\\css\\styles\\v4",
+    "\\lib\\css\\styles\\v4\\vd",
+    "\\src\\app",
+    "\\src\\assets\\vd\\content\\icons",
+    "\\src\\assets\\vd\\content\\images"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\angular.json",
   "PreviewInSolutionExplorer": false
 }

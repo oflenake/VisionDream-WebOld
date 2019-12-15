@@ -13,3 +13,5 @@ export class AlertComponent implements OnInit {
   }
 
 }
+
+console.log('AlertComponent is started!');
