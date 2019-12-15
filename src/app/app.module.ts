@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-// used to create fake backend
+// Used to create fake backend
 import { fakeBackendProvider } from './_helpers';
 
 import { SharedModule } from './shared/shared.module';
@@ -60,3 +60,5 @@ import { AlertComponent } from './_components/alert/alert.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+console.log('AppModule is started!');

@@ -1,39 +1,66 @@
 /*!
  * Created by:    VisionDream ICT Solutions
  * Author:        Onkgopotse Lenake <gupilenake@gmail.com> (https://visiondreamict.wordpress.com)
- * Contributors:  VisionDream Team <visiondreamict@gmail.com> (https://visiondreamict.wordpress.com)
+ * Contributors:  VisionDream Contributors <visiondreamict@gmail.com> (https://visiondreamict.wordpress.com)
  * Website:       https://visiondreamict.wordpress.com
  * 
- * File:          visiondream.less
- * Version:       4.14.0
- * Date:          2019-12-10
- * Description:   VisionDream LESS Framework v4.14.0 - by Onkgopotse Lenake and VisionDream contributors.
- *
- * Copyright:     © 2019 VisionDream ICT Solutions. All rights reserved.
+ * File:          styles.less
+ * Version:       v4.14.0
+ * Date:          2019-12-12
+ * Description:   VisionDream base styles v4.14.0 by Onkgopotse Lenake and VisionDream contributors.
  */
 
 /*!
  * @license
- * Copyright © 2019 VisionDream ICT Solutions. All rights reserved.
+ * © 2019 VisionDream ICT Solutions. All rights reserved.
  * 
- * Use of this source code is governed by an MIT-style license that can be 
- * found in the LICENSE file at http://visiondream.local/#/legal/terms
+ * Use of this source code is governed by a VisionDream-style license that can be 
+ * found in the LICENSE file at http://visiondream.local/legal/terms
  */
 
 /********************** Global color themes and variable properties **********************/
-:root {
-  --vd-yellow: #FFEB3B;
-  --vd-yellow-electric: #FFFF00;
-  --vd-yellow-usc-gold: #FFCC00;
-  --vd-yellow-pale: #FFFFCC;
-  --vd-yellow-pure: #FFC000;
-  --vd-yellow-text: #D2BE0E;
-  --vd-blue-capri: #00BFFF;
-  --vd-gray-50: #FAFAFA;
-  --vd-blue-gray-50: #ECEFF1;
-  --vd-cyan-stong: #1ABC9C;
-  --vd-cyan-stong-websafe: #33CC99;
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~visiondream/lib/css/themes/v4/vd/visiondream-theme.css';
+@import '~visiondream/lib/css/colors/v4/vd/visiondream-colors-2014-mat.css';
+@import '~visiondream/lib/css/styles/v4/vd/visiondream.css';
+@import '~visiondream/lib/less/styles/v4/vd/visiondream-variables.less';
+@import '~visiondream/lib/less/styles/v4/vd/visiondream-reset.less';
+@import '~visiondream/lib/less/styles/v4/vd/visiondream.less';
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: var(--vd-pc-100);
+}
+
+html {
+  line-height: 1.15;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: var(--vd-pc-100);
+  -webkit-text-size-adjust: var(--vd-pc-100);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, #intro, main, nav, section, mat-tab-group,
+.vd-container, .vd-container-header, .vd-container-text, .vd-container-form {
+  display: block;
+}
+
+body {
+  margin: var(--vd-num-00);
+  font-family: var(--vd-font-family-rhs);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--vd-tertiary);
+  text-align: left;
+  background: var(--vd-white);
+}

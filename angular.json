@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/visiondream",
+            "outputPath": "dist/visiondream-angular-4",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -29,9 +29,18 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "./node_modules/visiondream/lib/css/themes/v4/vd/visiondream-theme.css",
+              "./node_modules/visiondream/lib/css/colors/v4/vd/visiondream-colors-2014-mat.css",
+              "./node_modules/visiondream/lib/css/styles/v4/vd/visiondream.css",
+              "./node_modules/visiondream/lib/less/styles/v4/vd/visiondream-variables.less",
+              "./node_modules/visiondream/lib/less/styles/v4/vd/visiondream-reset.less",
+              "./node_modules/visiondream/lib/less/styles/v4/vd/visiondream.less",
               "src/styles.less"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/visiondream/lib/js/colors/v1/vd/visiondream-color.js",
+              "./node_modules/visiondream/lib/js/styles/v1/vd/visiondream.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -97,9 +106,18 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "./node_modules/visiondream/lib/css/themes/v4/vd/visiondream-theme.css",
+              "./node_modules/visiondream/lib/css/colors/v4/vd/visiondream-colors-2014-mat.css",
+              "./node_modules/visiondream/lib/css/styles/v4/vd/visiondream.css",
+              "./node_modules/visiondream/lib/less/styles/v4/vd/visiondream-variables.less",
+              "./node_modules/visiondream/lib/less/styles/v4/vd/visiondream-reset.less",
+              "./node_modules/visiondream/lib/less/styles/v4/vd/visiondream.less",
               "src/styles.less"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/visiondream/lib/js/colors/v1/vd/visiondream-color.js",
+              "./node_modules/visiondream/lib/js/styles/v1/vd/visiondream.js"
+            ]
           }
         },
         "lint": {

@@ -1,27 +1,35 @@
-# Visiondream
+# VisionDream Website
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm run start-vd` for an Angular development server. The browser will automatically open `http://localhost:44303/`.
 
-## Code scaffolding
+## Development build
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `npm run build-dev-vd` to build the Angular project artifacts for development. The artifacts will be stored in the `dist/visiondream/` directory.
 
-## Build
+## Production build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm run build-prod-vd` to build the Angular project production artifacts. The production artifacts will replace the development artifacts and be stored in the `dist/visiondream/` directory.
+
+## Webpack development server
+
+Run `npm run webpack-start-vd` for a Webpack development server. The browser will automatically open `http://localhost:8080/`.
+
+## Webpack production build
+
+Run `npm run webpack-build-vd` to build the Webpack project artifacts for production. The new production artifacts will replace the old production artifacts and be stored in the `dist/` directory.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm run test-vd` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `npm run e2e-vd` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Running linting tools
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run `npm run lint-vd` to execute the linting tools on the Angular website app code in the project folder via [TSLint](https://palantir.github.io/tslint/).

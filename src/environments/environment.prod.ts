@@ -5,3 +5,5 @@ export const environment = {
   logLevel: NgxLoggerLevel.OFF,
   serverLogLevel: NgxLoggerLevel.ERROR
 };
+
+console.log('Production environment is started!');

@@ -21,6 +21,7 @@ export class AppComponent {
     private router: Router,
     private authenticationService: AuthenticationService
   ) {
+    this.currentUser = new UserModel();
     this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
   }
 
@@ -30,3 +31,5 @@ export class AppComponent {
   }
 
 }
+
+console.log('AppComponent is started!');
