@@ -3,14 +3,22 @@ import { HttpRequest, HttpResponse, HttpHandler, HttpEvent, HttpInterceptor, HTT
 import { Observable, of, throwError } from 'rxjs';
 import { delay, mergeMap, materialize, dematerialize } from 'rxjs/operators';
 
+//const stringDefault: string = 'Empty';
+
 // Array in local storage for registered users
 let users = JSON.parse(localStorage.getItem('users')) || [];
 
+/**
+ * FakeBackendInterceptor class for backend-less development.
+ *
+ * @type FakeBackendInterceptor
+ */
 @Injectable({
   providedIn: 'root'
 })
-export class FakeBackendService implements HttpInterceptor {
+export class FakeBackendInterceptor implements HttpInterceptor {
 
+  // Interceptor
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     const { url, method, headers, body } = request;
 
@@ -32,13 +40,12 @@ export class FakeBackendService implements HttpInterceptor {
         case url.match(/\/users\/\d+$/) && method === 'DELETE':
           return deleteUser();
         default:
-          // pass through any requests not handled above
+          // Pass through any requests not handled above
           return next.handle(request);
       }
     }
 
-    // Route functions
-
+    // Route Functions: authenticate function
     function authenticate() {
       const { username, password } = body;
       const user = users.find(x => x.username === username && x.password === password);
@@ -52,6 +59,7 @@ export class FakeBackendService implements HttpInterceptor {
       })
     }
 
+    // Route Functions: register function
     function register() {
       const user = body
 
@@ -66,11 +74,13 @@ export class FakeBackendService implements HttpInterceptor {
       return ok();
     }
 
+    // Route Functions: getUsers function
     function getUsers() {
       if (!isLoggedIn()) return unauthorized();
       return ok(users);
     }
 
+    // Route Functions: deleteUser function
     function deleteUser() {
       if (!isLoggedIn()) return unauthorized();
 
@@ -79,24 +89,27 @@ export class FakeBackendService implements HttpInterceptor {
       return ok();
     }
 
-    // Helper functions
-
+    // Helper functions: ok function
     function ok(body?) {
       return of(new HttpResponse({ status: 200, body }))
     }
 
+    // Helper functions: error function
     function error(message) {
       return throwError({ error: { message } });
     }
 
+    // Helper functions: unauthorized function
     function unauthorized() {
       return throwError({ status: 401, error: { message: 'Unauthorised' } });
     }
 
+    // Helper functions: isLoggedIn function
     function isLoggedIn() {
       return headers.get('Authorization') === 'Bearer fake-jwt-token';
     }
 
+    // Helper functions: idFromUrl function
     function idFromUrl() {
       const urlParts = url.split('/');
       return parseInt(urlParts[urlParts.length - 1]);
@@ -105,9 +118,12 @@ export class FakeBackendService implements HttpInterceptor {
 
 }
 
+// fakeBackendProvider constant
 export const fakeBackendProvider = {
   // Use fake backend in place of Http service for backend-less development
   provide: HTTP_INTERCEPTORS,
-  useClass: FakeBackendService,
+  useClass: FakeBackendInterceptor,
   multi: true
 };
+
+console.log('FakeBackendInterceptor with fakeBackendProvider have executed!');

@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HTMLInlineCSSWebpackPlugin = require("html-inline-css-webpack-plugin").default;
-var webpackMajorVersion = require('webpack/package.json').version.split('.')[0];
+const webpackMajorVersion = require('webpack/package.json').version.split('.')[0];
 
 module.exports = (env, arg) => {
   const config = {
@@ -101,7 +101,7 @@ module.exports = (env, arg) => {
       }),
       new HTMLInlineCSSWebpackPlugin(),
       new webpack.DefinePlugin({
-        // Global app config object
+        // Global app configApp object
         configApp: JSON.stringify({
           apiUrlLc: 'http://localhost:44301',
           apiUrlEx: 'https://localhost:44331'
