@@ -95,7 +95,7 @@
     "less-loader": "^5.0.0",
     "media-query-splitting-plugin": "^1.1.16",
     "mini-css-extract-plugin": "^0.8.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "postcss-loader": "^3.0.0",
     "protractor": "~5.4.0",
     "raw-loader": "^4.0.0",
